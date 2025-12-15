@@ -1,5 +1,8 @@
 {
-  "rewrites": [
-    { "source": "/(.*)", "destination": "/" }
+  "builds": [
+    {
+      "src": "my-react-vite-app/package.json",
+      "use": "@vercel/vite"
+    }
   ]
 }
