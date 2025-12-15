@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Mini Site</title>
+    <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <h1 class="logo">Nurlan Agai</h1>
+            <nav class="nav">
+                <a href="#" class="nav-link">Главная</a>
+                <a href="#" class="nav-link">О проекте</a>
+                <a href="#" class="nav-link cta">Связаться</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="hero">
+        <div class="container hero-inner">
+            <section class="hero-card">
+                <h2>Привет — это мой сайт</h2>
+                <p>Пожалуйста, проверьте сайт. Небольшой демонстрационный макет с чистым и простым стилем.</p>
+                <a class="btn" href="#">Посмотреть</a>
+            </section>
+            <aside class="hero-aside">
+                <div class="box">Пример блока</div>
+            </aside>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>© <span id="year"></span> Nurlan Agai — Все права защищены</p>
+        </div>
+    </footer>
+
+    <script>
+        // простая динамика: текущий год
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
